@@ -1,0 +1,56 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: hsl(212, 33%, 89%);
+	font-family: "Source Serif Pro", "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	line-height: 1.5;
+	color:hsl(209, 34%, 30%);
+	font-size: 16px;
+}
+
+a {
+	color: rgb(0,100,200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0,80,160);
+}
+
+
+/*  */
+.title {
+	font-size: 1.75rem;
+	font-weight: 600;
+	line-height: 1.25;
+	color: hsl(205, 76%, 39%);
+	/* text-shadow: 1px 2px 1px #ccc; */
+}
+
+.subtitle {
+	font-weight: 300;
+	line-height: 1.35;
+	color: hsl(205, 67%, 45%);
+	/* text-shadow: 0px 2px 1px #ccc; */
+
+}
+
+/* helper colors */
+
+.d_flex {
+	display: flex;
+}
+
+.flex_justify_between {
+	justify-content: space-between;;
+}
