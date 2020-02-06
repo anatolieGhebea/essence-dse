@@ -1,10 +1,8 @@
 <script>
-	import DemoWrapper from '../components/DemoWrapper.svelte';
+	// import DemoWrapper from '../components/DemoWrapper.svelte';
 	import DemoCard from '../components/DemoCard.svelte';
 
-
-
-	let btn = `<button class="btn">Standard</button>`;
+	// let btn = `<button class="btn">Standard</button>`;
 	
 	let colors = [
 		'btn-primary',
@@ -28,7 +26,7 @@
 	let sizes = [
 		'btn-lg',
 		'btn-md',
-		'btn',
+		// 'btn',
 		'btn-sm',
 		'btn-xm',
 	];
@@ -42,14 +40,14 @@
 		'txt-24',
 	]
 
-	function generateButtons(classes, extraClasses = ''){
-		let s = '';
-		classes.forEach( cl => {
-			let el = '<button class="btn '+extraClasses+' '+cl+'">'+cl+'</button>  \n';
-			s += el;
-		})
-		return s;
-	}
+	// function generateButtons(classes, extraClasses = ''){
+	// 	let s = '';
+	// 	classes.forEach( cl => {
+	// 		let el = '<button class="btn '+extraClasses+' '+cl+'">'+cl+'</button>  \n';
+	// 		s += el;
+	// 	})
+	// 	return s;
+	// }
 
 </script>
 

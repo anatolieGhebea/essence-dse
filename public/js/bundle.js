@@ -2407,10 +2407,10 @@ var app = (function () {
     			t3 = space();
     			create_component(democard.$$.fragment);
     			attr_dev(h1, "class", "main-section-title");
-    			add_location(h1, file$2, 56, 1, 888);
-    			add_location(p, file$2, 57, 1, 933);
+    			add_location(h1, file$2, 54, 1, 889);
+    			add_location(p, file$2, 55, 1, 934);
     			attr_dev(div, "class", "page");
-    			add_location(div, file$2, 55, 0, 868);
+    			add_location(div, file$2, 53, 0, 869);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2474,7 +2474,14 @@ var app = (function () {
     		"btn-o-teal"
     	];
 
-    	let sizes = ["btn-lg", "btn-md", "btn", "btn-sm", "btn-xm"];
+    	let sizes = [
+    		"btn-lg",
+    		"btn-md",
+    		// 'btn',
+    		"btn-sm",
+    		"btn-xm"
+    	];
+
     	let atomicClasses = ["txt-12", "txt-14", "txt-16", "txt-18", "txt-20", "txt-24"];
 
     	$$self.$capture_state = () => {
