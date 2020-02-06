@@ -1644,29 +1644,29 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[20] = list[i];
+    	child_ctx[21] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[23] = list[i];
+    	child_ctx[24] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[23] = list[i];
+    	child_ctx[24] = list[i];
     	return child_ctx;
     }
 
-    // (63:4) {#each listExclusiveClasses as className }
+    // (92:4) {#each listExclusiveClasses as className }
     function create_each_block_2(ctx) {
     	let div;
     	let input;
     	let input_value_value;
     	let t0;
-    	let t1_value = /*className*/ ctx[23] + "";
+    	let t1_value = /*className*/ ctx[24] + "";
     	let t1;
     	let t2;
     	let dispose;
@@ -1679,11 +1679,11 @@ var app = (function () {
     			t1 = text(t1_value);
     			t2 = space();
     			attr_dev(input, "type", "radio");
-    			input.__value = input_value_value = /*className*/ ctx[23];
+    			input.__value = input_value_value = /*className*/ ctx[24];
     			input.value = input.__value;
-    			/*$$binding_groups*/ ctx[17][2].push(input);
-    			add_location(input, file$1, 64, 6, 1828);
-    			add_location(div, file$1, 63, 5, 1816);
+    			/*$$binding_groups*/ ctx[18][2].push(input);
+    			add_location(input, file$1, 93, 6, 2795);
+    			add_location(div, file$1, 92, 5, 2783);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1692,10 +1692,10 @@ var app = (function () {
     			append_dev(div, t0);
     			append_dev(div, t1);
     			append_dev(div, t2);
-    			dispose = listen_dev(input, "change", /*input_change_handler*/ ctx[16]);
+    			dispose = listen_dev(input, "change", /*input_change_handler*/ ctx[17]);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*listExclusiveClasses*/ 1 && input_value_value !== (input_value_value = /*className*/ ctx[23])) {
+    			if (dirty & /*listExclusiveClasses*/ 1 && input_value_value !== (input_value_value = /*className*/ ctx[24])) {
     				prop_dev(input, "__value", input_value_value);
     			}
 
@@ -1705,11 +1705,11 @@ var app = (function () {
     				input.checked = input.__value === /*selectedClass*/ ctx[3];
     			}
 
-    			if (dirty & /*listExclusiveClasses*/ 1 && t1_value !== (t1_value = /*className*/ ctx[23] + "")) set_data_dev(t1, t1_value);
+    			if (dirty & /*listExclusiveClasses*/ 1 && t1_value !== (t1_value = /*className*/ ctx[24] + "")) set_data_dev(t1, t1_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div);
-    			/*$$binding_groups*/ ctx[17][2].splice(/*$$binding_groups*/ ctx[17][2].indexOf(input), 1);
+    			/*$$binding_groups*/ ctx[18][2].splice(/*$$binding_groups*/ ctx[18][2].indexOf(input), 1);
     			dispose();
     		}
     	};
@@ -1718,20 +1718,20 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(63:4) {#each listExclusiveClasses as className }",
+    		source: "(92:4) {#each listExclusiveClasses as className }",
     		ctx
     	});
 
     	return block;
     }
 
-    // (72:4) {#each listModifierClasses as className }
+    // (101:4) {#each listModifierClasses as className }
     function create_each_block_1(ctx) {
     	let div;
     	let input;
     	let input_value_value;
     	let t0;
-    	let t1_value = /*className*/ ctx[23] + "";
+    	let t1_value = /*className*/ ctx[24] + "";
     	let t1;
     	let t2;
     	let dispose;
@@ -1744,11 +1744,11 @@ var app = (function () {
     			t1 = text(t1_value);
     			t2 = space();
     			attr_dev(input, "type", "checkbox");
-    			input.__value = input_value_value = /*className*/ ctx[23];
+    			input.__value = input_value_value = /*className*/ ctx[24];
     			input.value = input.__value;
-    			/*$$binding_groups*/ ctx[17][1].push(input);
-    			add_location(input, file$1, 73, 6, 2056);
-    			add_location(div, file$1, 72, 5, 2044);
+    			/*$$binding_groups*/ ctx[18][1].push(input);
+    			add_location(input, file$1, 102, 6, 3023);
+    			add_location(div, file$1, 101, 5, 3011);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1757,10 +1757,10 @@ var app = (function () {
     			append_dev(div, t0);
     			append_dev(div, t1);
     			append_dev(div, t2);
-    			dispose = listen_dev(input, "change", /*input_change_handler_1*/ ctx[18]);
+    			dispose = listen_dev(input, "change", /*input_change_handler_1*/ ctx[19]);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*listModifierClasses*/ 2 && input_value_value !== (input_value_value = /*className*/ ctx[23])) {
+    			if (dirty & /*listModifierClasses*/ 2 && input_value_value !== (input_value_value = /*className*/ ctx[24])) {
     				prop_dev(input, "__value", input_value_value);
     			}
 
@@ -1770,11 +1770,11 @@ var app = (function () {
     				input.checked = ~/*selectedModifiers*/ ctx[4].indexOf(input.__value);
     			}
 
-    			if (dirty & /*listModifierClasses*/ 2 && t1_value !== (t1_value = /*className*/ ctx[23] + "")) set_data_dev(t1, t1_value);
+    			if (dirty & /*listModifierClasses*/ 2 && t1_value !== (t1_value = /*className*/ ctx[24] + "")) set_data_dev(t1, t1_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div);
-    			/*$$binding_groups*/ ctx[17][1].splice(/*$$binding_groups*/ ctx[17][1].indexOf(input), 1);
+    			/*$$binding_groups*/ ctx[18][1].splice(/*$$binding_groups*/ ctx[18][1].indexOf(input), 1);
     			dispose();
     		}
     	};
@@ -1783,20 +1783,20 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(72:4) {#each listModifierClasses as className }",
+    		source: "(101:4) {#each listModifierClasses as className }",
     		ctx
     	});
 
     	return block;
     }
 
-    // (81:4) {#each atomicClasses as atomClassName }
+    // (110:4) {#each atomicClasses as atomClassName }
     function create_each_block(ctx) {
     	let div;
     	let input;
     	let input_value_value;
     	let t0;
-    	let t1_value = /*atomClassName*/ ctx[20] + "";
+    	let t1_value = /*atomClassName*/ ctx[21] + "";
     	let t1;
     	let t2;
     	let dispose;
@@ -1809,11 +1809,11 @@ var app = (function () {
     			t1 = text(t1_value);
     			t2 = space();
     			attr_dev(input, "type", "checkbox");
-    			input.__value = input_value_value = /*atomClassName*/ ctx[20];
+    			input.__value = input_value_value = /*atomClassName*/ ctx[21];
     			input.value = input.__value;
-    			/*$$binding_groups*/ ctx[17][0].push(input);
-    			add_location(input, file$1, 82, 6, 2287);
-    			add_location(div, file$1, 81, 5, 2275);
+    			/*$$binding_groups*/ ctx[18][0].push(input);
+    			add_location(input, file$1, 111, 6, 3254);
+    			add_location(div, file$1, 110, 5, 3242);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1822,10 +1822,10 @@ var app = (function () {
     			append_dev(div, t0);
     			append_dev(div, t1);
     			append_dev(div, t2);
-    			dispose = listen_dev(input, "change", /*input_change_handler_2*/ ctx[19]);
+    			dispose = listen_dev(input, "change", /*input_change_handler_2*/ ctx[20]);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*atomicClasses*/ 4 && input_value_value !== (input_value_value = /*atomClassName*/ ctx[20])) {
+    			if (dirty & /*atomicClasses*/ 4 && input_value_value !== (input_value_value = /*atomClassName*/ ctx[21])) {
     				prop_dev(input, "__value", input_value_value);
     			}
 
@@ -1835,11 +1835,11 @@ var app = (function () {
     				input.checked = ~/*selectedAtomicClasses*/ ctx[5].indexOf(input.__value);
     			}
 
-    			if (dirty & /*atomicClasses*/ 4 && t1_value !== (t1_value = /*atomClassName*/ ctx[20] + "")) set_data_dev(t1, t1_value);
+    			if (dirty & /*atomicClasses*/ 4 && t1_value !== (t1_value = /*atomClassName*/ ctx[21] + "")) set_data_dev(t1, t1_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div);
-    			/*$$binding_groups*/ ctx[17][0].splice(/*$$binding_groups*/ ctx[17][0].indexOf(input), 1);
+    			/*$$binding_groups*/ ctx[18][0].splice(/*$$binding_groups*/ ctx[18][0].indexOf(input), 1);
     			dispose();
     		}
     	};
@@ -1848,7 +1848,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(81:4) {#each atomicClasses as atomClassName }",
+    		source: "(110:4) {#each atomicClasses as atomClassName }",
     		ctx
     	});
 
@@ -1940,29 +1940,29 @@ var app = (function () {
     			}
 
     			attr_dev(div0, "class", "demo-area-show svelte-zbbmxx");
-    			add_location(div0, file$1, 45, 3, 1438);
+    			add_location(div0, file$1, 74, 3, 2405);
     			attr_dev(code, "class", "language-html");
-    			add_location(code, file$1, 51, 5, 1564);
-    			add_location(pre, file$1, 50, 4, 1553);
+    			add_location(code, file$1, 80, 5, 2531);
+    			add_location(pre, file$1, 79, 4, 2520);
     			attr_dev(div1, "class", "demo-area-code svelte-zbbmxx");
-    			add_location(div1, file$1, 49, 3, 1520);
+    			add_location(div1, file$1, 78, 3, 2487);
     			attr_dev(div2, "class", "col-sx svelte-zbbmxx");
-    			add_location(div2, file$1, 44, 2, 1414);
+    			add_location(div2, file$1, 73, 2, 2381);
     			attr_dev(h40, "class", "svelte-zbbmxx");
-    			add_location(h40, file$1, 61, 4, 1737);
-    			add_location(div3, file$1, 60, 3, 1727);
+    			add_location(h40, file$1, 90, 4, 2704);
+    			add_location(div3, file$1, 89, 3, 2694);
     			attr_dev(h41, "class", "svelte-zbbmxx");
-    			add_location(h41, file$1, 70, 4, 1967);
-    			add_location(div4, file$1, 69, 3, 1957);
+    			add_location(h41, file$1, 99, 4, 2934);
+    			add_location(div4, file$1, 98, 3, 2924);
     			attr_dev(h42, "class", "svelte-zbbmxx");
-    			add_location(h42, file$1, 79, 4, 2202);
-    			add_location(div5, file$1, 78, 3, 2192);
+    			add_location(h42, file$1, 108, 4, 3169);
+    			add_location(div5, file$1, 107, 3, 3159);
     			attr_dev(div6, "class", "col-dx demo-area-options svelte-zbbmxx");
-    			add_location(div6, file$1, 59, 2, 1685);
+    			add_location(div6, file$1, 88, 2, 2652);
     			attr_dev(div7, "class", "d_flex flex_justify_between");
-    			add_location(div7, file$1, 43, 1, 1370);
+    			add_location(div7, file$1, 72, 1, 2337);
     			attr_dev(div8, "class", "demo-area ds svelte-zbbmxx");
-    			add_location(div8, file$1, 42, 0, 1342);
+    			add_location(div8, file$1, 71, 0, 2309);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2121,6 +2121,21 @@ var app = (function () {
     	let selectedClass = "";
     	let selectedModifiers = [];
     	let selectedAtomicClasses = [];
+
+    	// passing as parameters only the variables that may change
+    	function createDomElement(selectedClass, selectedModifiersString, selectedAtomicString) {
+    		let stringElem = domElementOpen + " " + "class=\"";
+    		let dynamicClasses = [];
+    		if (elBaseClassString.trim() != "") dynamicClasses.push(elBaseClassString);
+    		if (selectedClass.trim() != "") dynamicClasses.push(selectedClass);
+    		if (selectedModifiersString.trim() != "") dynamicClasses.push(selectedModifiersString);
+    		if (selectedAtomicString.trim() != "") dynamicClasses.push(selectedAtomicString);
+    		if (elTailClassString.trim() != "") dynamicClasses.push(elTailClassString);
+    		let cls = converToString(dynamicClasses);
+    		stringElem += cls + "\" " + domElementProperties + ">" + domElementContent + domeElementClose; // close class property
+    		return stringElem;
+    	}
+
     	let htmlPritty = "";
 
     	const writable_props = [
@@ -2221,8 +2236,12 @@ var app = (function () {
     			 $$invalidate(15, selectedAtomicString = converToString(selectedAtomicClasses));
     		}
 
-    		if ($$self.$$.dirty & /*domElementOpen, elBaseClassString, selectedClass, selectedModifiersString, selectedAtomicString, elTailClassString, domElementProperties, domElementContent, domeElementClose*/ 65288) {
-    			 $$invalidate(7, htmlCode = domElementOpen + " " + "class=\"" + elBaseClassString + " " + selectedClass + " " + selectedModifiersString + " " + selectedAtomicString + " " + elTailClassString + " \" " + domElementProperties + ">" + domElementContent + domeElementClose);
+    		if ($$self.$$.dirty & /*selectedClass, selectedModifiersString, selectedAtomicString*/ 49160) {
+    			// $: htmlCode = 	domElementOpen + ' '+
+    			// 				'class="' + elBaseClassString +' '+ selectedClass +' '+ selectedModifiersString +' '+selectedAtomicString+' '+ elTailClassString +' " ' +
+    			// 				domElementProperties + '>' + domElementContent + 
+    			// 				domeElementClose;
+    			 $$invalidate(7, htmlCode = createDomElement(selectedClass, selectedModifiersString, selectedAtomicString));
     		}
 
     		if ($$self.$$.dirty & /*htmlCode*/ 128) {
@@ -2248,6 +2267,7 @@ var app = (function () {
     		elTailClassString,
     		selectedModifiersString,
     		selectedAtomicString,
+    		createDomElement,
     		input_change_handler,
     		$$binding_groups,
     		input_change_handler_1,

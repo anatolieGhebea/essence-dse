@@ -29,10 +29,39 @@
 		return s;
 	}
 
-	$: htmlCode = 	domElementOpen + ' '+
-					'class="' + elBaseClassString +' '+ selectedClass +' '+ selectedModifiersString +' '+selectedAtomicString+' '+ elTailClassString +' " ' +
-					domElementProperties + '>' + domElementContent + 
-					domeElementClose;
+	// $: htmlCode = 	domElementOpen + ' '+
+	// 				'class="' + elBaseClassString +' '+ selectedClass +' '+ selectedModifiersString +' '+selectedAtomicString+' '+ elTailClassString +' " ' +
+	// 				domElementProperties + '>' + domElementContent + 
+	// 				domeElementClose;
+	
+	$: htmlCode = createDomElement(selectedClass, selectedModifiersString,  selectedAtomicString);
+
+	// passing as parameters only the variables that may change
+	function createDomElement( selectedClass, selectedModifiersString,  selectedAtomicString ){
+		let stringElem = domElementOpen + ' '+ 'class="';
+
+		let dynamicClasses = [];
+		if( elBaseClassString.trim() != '' )
+			dynamicClasses.push(elBaseClassString);
+		
+		if( selectedClass.trim() != '' )
+			dynamicClasses.push(selectedClass);
+		
+		if( selectedModifiersString.trim() != '' )
+			dynamicClasses.push(selectedModifiersString);
+		
+		if( selectedAtomicString.trim() != '' )
+			dynamicClasses.push(selectedAtomicString);
+		
+		if( elTailClassString.trim() != '' )
+			dynamicClasses.push(elTailClassString);
+
+		let cls = converToString(dynamicClasses);
+
+		stringElem += cls +'" ' +domElementProperties + '>' + domElementContent + domeElementClose ; // close class property
+
+		return stringElem;
+	}
 
 	let htmlPritty = '';
 	// Returns a highlighted HTML string
