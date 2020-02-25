@@ -2,6 +2,10 @@
 	import Prims from 'prismjs';
 
 	// atoms to create the html code for the Dome element to be shown 
+	
+	export let jsn = { cls: 'pippo', cnt: 'ciao' };
+	
+
 	export let domElementOpen = '<div';
 	export let domElementContent = 'test';
 	export let domeElementClose = '</div>';
@@ -36,6 +40,8 @@
 	
 	$: htmlCode = createDomElement(selectedClass, selectedModifiersString,  selectedAtomicString);
 
+	export let domLiteral = '<button class="%%cls%%">%%cnt%%</button>';
+
 	// passing as parameters only the variables that may change
 	function createDomElement( selectedClass, selectedModifiersString,  selectedAtomicString ){
 		let stringElem = domElementOpen + ' '+ 'class="';
@@ -60,6 +66,9 @@
 
 		stringElem += cls +'" ' +domElementProperties + '>' + domElementContent + domeElementClose ; // close class property
 
+		// stringElem = `<button class="${cls}">${jsn.cnt}</button>`;
+		stringElem = domLiteral.replace(/%%cls%%/, cls).replace(/%%cnt%%/, jsn.cnt);
+		
 		return stringElem;
 	}
 

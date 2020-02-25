@@ -1,49 +1,75 @@
 <script>
-	// import components
-	import Buttons from './designComponents/Buttons.svelte';
-	// import ButtonsBulma from './designComponents/ButtonsBulma.svelte';
-	import DisplayHelpers from './designComponents/DisplayHelpers.svelte';
-	import Text from './designComponents/Text.svelte';
+	// import fs from 'fs';
+	// console.log(fs);
+	import Simple from './components/Simple.svelte';
+	import  config from './config/default.json';
+	
+	import  tmpTestDoc from './atomicCss/doc/_breackpoints.json';
 
-	let componentList = [
-		'Buttons',
-		'Text',
-		'DisplayHelpers' ,
-		'Helpers' ,
-		'Layout' ,
-		'Tables' ,
-		];
+	let doc = {};
 
-	let activeElement = componentList[0];
+	let categories = config.categories;
+	$: selectFirstEl(categories);
 
-	function setActive(active){
-		activeElement = active;
+	function selectFirstEl(cats) {
+		if( cats.length > 0 ){		
+			if(cats[0].items.length > 0 ) {
+				let el = cats[0]['items'][0];
+				let cmpt = cats[0].componentType;
+				setActiveElem(el, cmpt );
+			}
+		}
 	}
+
+	// console.log(json);
+	// /config/default.json
+	let activeElem = null;
+	let componentType = null;
+
+	function setActiveElem( el, cmpt ){
+		activeElem = el;
+		componentType = cmpt;
+		if( el.file == '_breackpoints' ){
+			doc = tmpTestDoc;
+		}
+	}
+
+	// function isActive(activeLink, al) {
+	// 	return activeLink == al;
+	// }
 
 </script>
 
 <main>
+<main>
 	
 	<div class="container">
 		<div class="side-menu">
-			<ul>
-			{#each componentList as cmp}
-				<li class:active="{activeElement == cmp}" on:click="{ () => setActive(cmp)}">{cmp}</li>
+			<ul >
+			{#each categories as catList }
+				<li class="heading-li">
+					{ catList.name }
+					<ul class="hoverable">
+						{#each catList.items as item }
+							<li class:active="{ activeElem.file == item.file  }" on:click="{ () => setActiveElem( item, catList.componentType ) }">{ item.displayName }</li>
+						{/each}
+					</ul>
+				</li>
+				<!-- <li class:active="{ activeElement == cmp }" on:click="{ () => setActive( cmp ) }">{ cmp }</li> -->
 			{/each}
 			</ul>
 		</div>
 
 		<div class="main-content">
-			{#if activeElement == 'Buttons'} 
-				<Buttons></Buttons>
-			{:else if activeElement == 'Text'}
-				<Text></Text>
-			{:else if activeElement == 'DisplayHelpers'}
-				<DisplayHelpers></DisplayHelpers>
+			<!-- slected element { activeElem.displayName } -->
+			{#if componentType == 'simple' }
+				<Simple activeElement="{activeElem}" doc="{doc}" lang="it"></Simple>
 			{/if}
-			
 		</div>
 	</div>
+
+</main>
+	
 
 </main>
 
@@ -70,10 +96,11 @@
 	position: sticky;
 	top: 0;
 	color: #fff;
+	padding-left: 1rem; 
 }
 .container .main-content {
 	flex-grow: 1;
-	padding-left: 2.5rem;
+	padding: 2.5rem;
 }
 
 .side-menu ul {
@@ -82,17 +109,18 @@
 }
 
 .side-menu ul li {
-	cursor: pointer;
 	list-style: none;
+}
+.side-menu ul.hoverable li {
+	cursor: pointer;
 	padding-left: .5rem;
 	border-left:2px solid transparent;
 }
 
-.side-menu ul li:hover,
-.side-menu ul li.active {
-	background: rgba(0, 0, 0, 0.2);
-	border-left: 2px solid #1870af;
+.side-menu ul.hoverable li:hover,
+.side-menu ul.hoverable li.active {
+	background: rgba(0, 0, 0, 0.5);
+	border-right: 3px solid #1870af;
 	
 }
-
 </style>

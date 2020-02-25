@@ -1,0 +1,128 @@
+
+// modificatori text
+.text_base { color: #555;}
+.text_dark { color: #333; }
+.text_light { color: #777; }
+.text_white { color: #fff; }
+.text_black { color: #000; }
+
+.text_right {
+    text-align: right !important;
+}
+.text_center {
+    text-align: center !important;
+}
+.text_left {
+    text-align: left !important;
+}
+
+// TEXT SIZE
+.text_s_12 { font-size: 0.75rem; } // 12px
+.text_s_14 { font-size: 0.875rem; } // 14px
+.text_s_16 { font-size: 1rem; } // 16px
+.text_s_18 { font-size: 1.125rem; } // 18px
+.text_s_20 { font-size: 1.25rem; } // 20px
+.text_s_24 { font-size: 1.5rem; } // 24px
+.text_s_32 { font-size: 2rem; } // 32px
+.text_s_48 { font-size: 3rem; } // 48px
+
+// TEXT SIZE relative
+// DA USARE SOLO IN CASI PARTICOLARI
+// DA USARE SOLO IN CASI PARTICOLARI
+// DA USARE SOLO IN CASI PARTICOLARI
+// DA USARE SOLO IN CASI PARTICOLARI
+// DA USARE SOLO IN CASI PARTICOLARI
+// dimensioni relative al parent
+.text_rs_half { font-size: 0.5em; }
+.text_rs_smaller  { font-size: 0.75em; }
+.text_rs_normal { font-size: 1em ; }
+.text_rs_bigger { font-size: 1.25em; }
+.text_rs_twice  { font-size: 2em; }
+
+
+// TEXT COLORS
+// Neutrals
+.text_neutral_050 { color: var(--neutral_050); }
+.text_neutral_100 { color: var(--neutral_100); }
+.text_neutral_200 { color: var(--neutral_200); }
+.text_neutral_300 { color: var(--neutral_300); }
+.text_neutral_400 { color: var(--neutral_400); }
+.text_neutral_500 { color: var(--neutral_500); }
+.text_neutral_600 { color: var(--neutral_600); }
+.text_neutral { color: var(--neutral_700); }
+.text_neutral_800 { color: var(--neutral_800); }
+.text_neutral_900 { color: var(--neutral_900); }
+
+// primary
+.text_primary_050 { color: var(--primary_050); }
+.text_primary_100 { color: var(--primary_100); }
+.text_primary_200 { color: var(--primary_200); }
+.text_primary_300 { color: var(--primary_300); }
+.text_primary_400 { color: var(--primary_400); }
+.text_primary_500 { color: var(--primary_500); }
+.text_primary_600 { color: var(--primary_600); }
+.text_primary { color: var(--primary_700); }
+.text_primary_800 { color: var(--primary_800); }
+.text_primary_900 { color: var(--primary_900); }
+
+// cyan
+.text_info_050 { color: var(--info_050); }
+.text_info_100 { color: var(--info_100); }
+.text_info_200 { color: var(--info_200); }
+.text_info_300 { color: var(--info_300); }
+.text_info_400 { color: var(--info_400); }
+.text_info_500 { color: var(--info_500); }
+.text_info_600 { color: var(--info_600); }
+.text_info { color: var(--info_700); }
+.text_info_800 { color: var(--info_800); }
+.text_info_900 { color: var(--info_900); }
+
+// red
+.text_danger_050 { color: var(--danger_050); }
+.text_danger_100 { color: var(--danger_100); }
+.text_danger_200 { color: var(--danger_200); }
+.text_danger_300 { color: var(--danger_300); }
+.text_danger_400 { color: var(--danger_400); }
+.text_danger_500 { color: var(--danger_500); }
+.text_danger_600 { color: var(--danger_600); }
+.text_danger { color: var(--danger_700); }
+.text_danger_800 { color: var(--danger_800); }
+.text_danger_900 { color: var(--danger_900); }
+
+// Green
+.text_success_050 {color: var(--success_050); }
+.text_success_100 {color: var(--success_100); }
+.text_success_200 {color: var(--success_200); }
+.text_success_300 {color: var(--success_300); }
+.text_success_400 {color: var(--success_400); }
+.text_success_500 {color: var(--success_500); }
+.text_success_600 {color: var(--success_600); }
+.text_success {color: var(--success_700); }
+.text_success_800 {color: var(--success_800); }
+.text_success_900 {color: var(--success_900); }
+
+
+// Yellow
+.text_warning_050 { color: var(--warning_050); }
+.text_warning_100 { color: var(--warning_100); }
+.text_warning_200 { color: var(--warning_200); }
+.text_warning_300 { color: var(--warning_300); }
+.text_warning_400 { color: var(--warning_400); }
+.text_warning_500 { color: var(--warning_500); }
+.text_warning_600 { color: var(--warning_600); }
+.text_warning { color: var(--warning_700); }
+.text_warning_800 { color: var(--warning_800); }
+.text_warning_900 { color: var(--warning_900); }
+
+
+// teal
+.text_teal_050 { color: var(--teal_050); }
+.text_teal_100 { color: var(--teal_100); }
+.text_teal_200 { color: var(--teal_200); }
+.text_teal_300 { color: var(--teal_300); }
+.text_teal_400 { color: var(--teal_400); }
+.text_teal_500 { color: var(--teal_500); }
+.text_teal_600 { color: var(--teal_600); }
+.text_teal { color: var(--teal_700); }
+.text_teal_800 { color: var(--teal_800); }
+.text_teal_900 { color: var(--teal_900); }

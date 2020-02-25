@@ -1,0 +1,120 @@
+@import '_breackpoints';
+
+.xsu\:hide,
+.xs\:hide {
+	display: none !important;
+}
+
+/* Da 480px in su */ 
+/* sm */
+@media screen and (min-width: $breakpoint-sm) {
+
+	.xs\:hide {
+		display: initial;
+	}
+
+	.smu\:hide,
+	.sm\:hide {
+		display: none !important;
+	}
+
+}
+
+/* Da 768px in su */ 
+/* md */
+@media screen and (min-width: $breakpoint-md) { 
+
+	.sm\:hide {
+		display: initial;
+	}
+
+	
+	.mdu\:hide,
+	.md\:hide {
+		display: none !important;
+	}
+
+}
+
+/* lg */
+/* 1024 */
+@media screen and (min-width: $breakpoint-lg) {
+
+	.md\:hide {
+		display: initial;
+	}
+
+	.lgu\:hide,
+	.lg\:hide {
+		display: none !important;
+	}
+
+}
+
+
+/* xl */
+/* 1360 */
+@media screen and (min-width: $breakpoint-xl) {
+
+	.lg\:hide {
+		display: initial;
+	}
+
+	.xl\:hide {
+		display: none !important;
+	}
+
+}
+
+// MEDIA QUERY FROM top TO bottom
+/* xl */
+/* 1360 */
+@media screen and (max-width: $breakpoint-xl) {
+
+
+}
+
+/* lg */
+/* 1024 */
+@media screen and (max-width: $breakpoint-lg) {
+
+	.lgd\:hide {
+		display: none !important;
+	}
+}
+
+/* Da 768px in su */ 
+/* md */
+@media screen and (max-width: $breakpoint-md) { 
+
+	.mdd\:hide {
+		display: none !important;
+	}
+
+}
+
+/* Da 480px in su */ 
+/* sm */
+@media screen and (max-width: $breakpoint-sm) {
+
+	.smd\:hide {
+		display: none !important;
+	}
+}
+
+
+.responsiveWrapper_sm {
+
+}
+
+.responsiveWrapper_md {
+
+}
+
+.responsiveWrapper_lg {
+
+}
+
+.responsiveWrapper_xl {
+
+}

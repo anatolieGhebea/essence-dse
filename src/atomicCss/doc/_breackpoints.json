@@ -1,0 +1,72 @@
+{
+	"mainDescription": {
+		"it": "Per i breack points vengono definite le seguenti variabili. Questo vengono usate dai diversi fogli di stile per la definizione delle regole di media query.",
+		"en": ""
+	},
+
+	"blockClasses": [
+		{
+			"class": "container",
+			"description": {
+				"it":"Classe da assegnare ad un elemento che deve contenere delle righe responsive (@testo di prova da modificare) ",
+				"en":""
+			},
+			"example": " <div class=\"container\"> ... </div>"
+		}
+	],
+
+	"elementClasses": [],
+
+	"modifierClasses": [],
+
+	"cssVariables": [
+		{
+			"variable": "$width",
+			"default": "100%",
+			"description": {
+				"it":"Questa variabile viene usata per calcolare le larghezze delle colonne per il layout <i> simple_grid </i> ",
+				"en":""
+			}
+		},
+		{
+			"variable": "$gutter",
+			"default": "0",
+			"description": {
+				"it":"Questa variabile viene usata per calcolare il gap tra le colonne per il layout <i> simple_grid </i>. Per il design sistema attuale, di default non è presente uno gap tra le colonne, gli elementi che vengono messi all'interno dovranno gestirsi la spaziatura tramite il margin o il padding.",
+				"en":""
+			}
+		},
+		{
+			"variable": "$breakpoint-sm",
+			"default": "30em",
+			"description": {
+				"it":"Si intende che sotto i 30em <i>(480px)</i> si è su un schermo xm <small>(extra small)</small>, da 30em in su e fino al <i>$breakpoint-md</i> lo schermo ha dimensione sm <small>{small}</small>",
+				"en":""
+			}
+		},
+		{
+			"variable": "$breakpoint-md",
+			"default": "48em",
+			"description": {
+				"it":"Si intende che sotto i 48em <i>(768px)</i> si è su un schermo sm <small>(small)</small>, da 48em in su e fino al <i>$breakpoint-lg</i> lo schermo ha dimensione md <small>{medeum}</small>",
+				"en":""
+			}
+		},
+		{
+			"variable": "$breakpoint-lg",
+			"default": "64em",
+			"description": {
+				"it":"Si intende che sotto i 64em <i>(1024px)</i> si è su un schermo md <small>(medeum)</small>, da 64em in su e fino al <i>$breakpoint-xl</i> lo schermo ha dimensione lg <small>{large}</small>",
+				"en":""
+			}
+		},
+		{
+			"variable": "$breakpoint-xl",
+			"default": "85em",
+			"description": {
+				"it":"Quando sono su schermi che hanno risoluzione maggiore di <i>(1360px)</i>",
+				"en":""
+			}
+		}
+	]
+}

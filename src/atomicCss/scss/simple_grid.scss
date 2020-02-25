@@ -1,0 +1,126 @@
+// SIMPLE GRID - SASS/SCSS
+@import '_breackpoints';
+
+.sgRow {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sgRow [class^="sgRow-col"] {
+  min-height: 0.125rem;
+  word-break: break-word;
+}
+
+.sgRow-col {
+	width: auto;
+}
+
+.sgRow-col.span1,
+.sgRow-col.span2,
+.sgRow-col.span3,
+.sgRow-col.span4,
+.sgRow-col.span5,
+.sgRow-col.span6,
+.sgRow-col.span7,
+.sgRow-col.span8,
+.sgRow-col.span9,
+.sgRow-col.span10,
+.sgRow-col.span11,
+.sgRow-col.span12 {
+  width: $width;
+}
+
+.sgRow-col.sm\:span1 { width:($width / 12) - ($gutter * 11 / 12); }
+.sgRow-col.sm\:span2 { width: ($width / 6) - ($gutter * 10 / 12); }
+.sgRow-col.sm\:span3 { width: ($width / 4) - ($gutter * 9 / 12); }
+.sgRow-col.sm\:span4 { width: ($width / 3) - ($gutter * 8 / 12); }
+.sgRow-col.sm\:span5 { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
+.sgRow-col.sm\:span6 { width: ($width / 2) - ($gutter * 6 / 12); }
+.sgRow-col.sm\:span7 { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
+.sgRow-col.sm\:span8 { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
+.sgRow-col.sm\:span9 { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
+.sgRow-col.sm\:span10 { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
+.sgRow-col.sm\:span11 { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
+.sgRow-col.sm\:span12 { width: $width; }
+
+@media only screen and (min-width: $breakpoint-md) {
+  .sgRow-col.span1 { width:($width / 12) - ($gutter * 11 / 12); }
+  .sgRow-col.span2 { width: ($width / 6) - ($gutter * 10 / 12); }
+  .sgRow-col.span3 { width: ($width / 4) - ($gutter * 9 / 12); }
+  .sgRow-col.span4 { width: ($width / 3) - ($gutter * 8 / 12); }
+  .sgRow-col.span5 { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
+  .sgRow-col.span6 { width: ($width / 2) - ($gutter * 6 / 12); }
+  .sgRow-col.span7 { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
+  .sgRow-col.span8 { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
+  .sgRow-col.span9 { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
+  .sgRow-col.span10 { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
+  .sgRow-col.span11 { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
+  .sgRow-col.span12 { width: $width; }
+
+  .sgRow-col.md\:span1 { width:($width / 12) - ($gutter * 11 / 12); }
+  .sgRow-col.md\:span2 { width: ($width / 6) - ($gutter * 10 / 12); }
+  .sgRow-col.md\:span3 { width: ($width / 4) - ($gutter * 9 / 12); }
+  .sgRow-col.md\:span4 { width: ($width / 3) - ($gutter * 8 / 12); }
+  .sgRow-col.md\:span5 { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
+  .sgRow-col.md\:span6 { width: ($width / 2) - ($gutter * 6 / 12); }
+  .sgRow-col.md\:span7 { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
+  .sgRow-col.md\:span8 { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
+  .sgRow-col.md\:span9 { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
+  .sgRow-col.md\:span10 { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
+  .sgRow-col.md\:span11 { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
+  .sgRow-col.md\:span12 { width: $width; }
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+  .sgRow-col.span1 { width:($width / 12) - ($gutter * 11 / 12); }
+  .sgRow-col.span2 { width: ($width / 6) - ($gutter * 10 / 12); }
+  .sgRow-col.span3 { width: ($width / 4) - ($gutter * 9 / 12); }
+  .sgRow-col.span4 { width: ($width / 3) - ($gutter * 8 / 12); }
+  .sgRow-col.span5 { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
+  .sgRow-col.span6 { width: ($width / 2) - ($gutter * 6 / 12); }
+  .sgRow-col.span7 { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
+  .sgRow-col.span8 { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
+  .sgRow-col.span9 { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
+  .sgRow-col.span10 { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
+  .sgRow-col.span11 { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
+  .sgRow-col.span12 { width: $width; }
+}
+
+/*
+* Sel il <div> che contiene le sgRow non occupa il 100% della pagina, allora le media query 
+* non riescono a pilotare in maniera coretta le dimensioni delle sgRow-col, è possibile forzare 
+* un ridimensionamneto delle colonne aggiungendo una delle due classi sottostanti al contenitore principale. 
+* Comportomaneto da pilotare via javascript, cosi viene simulata la media query sulla largezza del contenitore 
+* e non della viewPort
+*/
+.responsiveWrapper_sm {
+	.sgRow-col.sm\:span1 { width:($width / 12) - ($gutter * 11 / 12); }
+	.sgRow-col.sm\:span2 { width: ($width / 6) - ($gutter * 10 / 12); }
+	.sgRow-col.sm\:span3 { width: ($width / 4) - ($gutter * 9 / 12); }
+	.sgRow-col.sm\:span4 { width: ($width / 3) - ($gutter * 8 / 12); }
+	.sgRow-col.sm\:span5 { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
+	.sgRow-col.sm\:span6 { width: ($width / 2) - ($gutter * 6 / 12); }
+	.sgRow-col.sm\:span7 { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
+	.sgRow-col.sm\:span8 { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
+	.sgRow-col.sm\:span9 { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
+	.sgRow-col.sm\:span10 { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
+	.sgRow-col.sm\:span11 { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
+	.sgRow-col.sm\:span12 { width: $width; }
+}
+
+.responsiveWrapper_md {
+	.sgRow-col.md\:span1 { width:($width / 12) - ($gutter * 11 / 12); }
+  	.sgRow-col.md\:span2 { width: ($width / 6) - ($gutter * 10 / 12); }
+  	.sgRow-col.md\:span3 { width: ($width / 4) - ($gutter * 9 / 12); }
+  	.sgRow-col.md\:span4 { width: ($width / 3) - ($gutter * 8 / 12); }
+  	.sgRow-col.md\:span5 { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
+  	.sgRow-col.md\:span6 { width: ($width / 2) - ($gutter * 6 / 12); }
+  	.sgRow-col.md\:span7 { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
+  	.sgRow-col.md\:span8 { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
+  	.sgRow-col.md\:span9 { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
+  	.sgRow-col.md\:span10 { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
+  	.sgRow-col.md\:span11 { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
+  	.sgRow-col.md\:span12 { width: $width; }
+}

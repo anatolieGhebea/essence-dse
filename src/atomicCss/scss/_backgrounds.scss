@@ -1,0 +1,91 @@
+
+// modificatori
+.bg_white { background-color: #fff; }
+.bg_dark { background-color: #555; }
+
+// BACKGROUND-COLORS
+// Neutrals
+.bg_neutral_050 { background-color: var(--neutral_050); }
+.bg_neutral_100 { background-color: var(--neutral_100); }
+.bg_neutral_200 { background-color: var(--neutral_200); }
+.bg_neutral_300 { background-color: var(--neutral_300); }
+.bg_neutral_400 { background-color: var(--neutral_400); }
+.bg_neutral_500 { background-color: var(--neutral_500); }
+.bg_neutral_600 { background-color: var(--neutral_600); }
+.bg_neutral_700 { background-color: var(--neutral_700); }
+.bg_neutral_800 { background-color: var(--neutral_800); }
+.bg_neutral_900 { background-color: var(--neutral_900); }
+
+// primary
+.bg_primary_050 { background-color: var(--primary_050); }
+.bg_primary_100 { background-color: var(--primary_100); }
+.bg_primary_200 { background-color: var(--primary_200); }
+.bg_primary_300 { background-color: var(--primary_300); }
+.bg_primary_400 { background-color: var(--primary_400); }
+.bg_primary_500 { background-color: var(--primary_500); }
+.bg_primary_600 { background-color: var(--primary_600); }
+.bg_primary { background-color: var(--primary_700); }
+.bg_primary_800 { background-color: var(--primary_800); }
+.bg_primary_900 { background-color: var(--primary_900); }
+
+// cyan
+.bg_info_050 { background-color: var(--info_050); }
+.bg_info_100 { background-color: var(--info_100); }
+.bg_info_200 { background-color: var(--info_200); }
+.bg_info_300 { background-color: var(--info_300); }
+.bg_info_400 { background-color: var(--info_400); }
+.bg_info_500 { background-color: var(--info_500); }
+.bg_info_600 { background-color: var(--info_600); }
+.bg_info { background-color: var(--info_700); }
+.bg_info_800 { background-color: var(--info_800); }
+.bg_info_900 { background-color: var(--info_900); }
+
+// red
+.bg_danger_050 { background-color: var(--danger_050); }
+.bg_danger_100 { background-color: var(--danger_100); }
+.bg_danger_200 { background-color: var(--danger_200); }
+.bg_danger_300 { background-color: var(--danger_300); }
+.bg_danger_400 { background-color: var(--danger_400); }
+.bg_danger_500 { background-color: var(--danger_500); }
+.bg_danger_600 { background-color: var(--danger_600); }
+.bg_danger { background-color: var(--danger_700); }
+.bg_danger_800 { background-color: var(--danger_800); }
+.bg_danger_900 { background-color: var(--danger_900); }
+
+// Green
+.bg_success_050 {background-color: var(--success_050); }
+.bg_success_100 {background-color: var(--success_100); }
+.bg_success_200 {background-color: var(--success_200); }
+.bg_success_300 {background-color: var(--success_300); }
+.bg_success_400 {background-color: var(--success_400); }
+.bg_success_500 {background-color: var(--success_500); }
+.bg_success_600 {background-color: var(--success_600); }
+.bg_success {background-color: var(--success_700); }
+.bg_success_800 {background-color: var(--success_800); }
+.bg_success_900 {background-color: var(--success_900); }
+
+
+// Yellow
+.bg_warning_050 { background-color: var(--warning_050); }
+.bg_warning_100 { background-color: var(--warning_100); }
+.bg_warning_200 { background-color: var(--warning_200); }
+.bg_warning_300 { background-color: var(--warning_300); }
+.bg_warning_400 { background-color: var(--warning_400); }
+.bg_warning_500 { background-color: var(--warning_500); }
+.bg_warning_600 { background-color: var(--warning_600); }
+.bg_warning { background-color: var(--warning_700); }
+.bg_warning_800 { background-color: var(--warning_800); }
+.bg_warning_900 { background-color: var(--warning_900); }
+
+
+// teal
+.bg_teal_050 { background-color: var(--teal_050); }
+.bg_teal_100 { background-color: var(--teal_100); }
+.bg_teal_200 { background-color: var(--teal_200); }
+.bg_teal_300 { background-color: var(--teal_300); }
+.bg_teal_400 { background-color: var(--teal_400); }
+.bg_teal_500 { background-color: var(--teal_500); }
+.bg_teal_600 { background-color: var(--teal_600); }
+.bg_teal { background-color: var(--teal_700); }
+.bg_teal_800 { background-color: var(--teal_800); }
+.bg_teal_900 { background-color: var(--teal_900); }

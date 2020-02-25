@@ -1,0 +1,300 @@
+@charset "UTF-8";
+.sgRow {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sgRow [class^="sgRow-col"] {
+  min-height: 0.125rem;
+  word-break: break-word;
+}
+
+.sgRow-col {
+  width: auto;
+}
+
+.sgRow-col.span1,
+.sgRow-col.span2,
+.sgRow-col.span3,
+.sgRow-col.span4,
+.sgRow-col.span5,
+.sgRow-col.span6,
+.sgRow-col.span7,
+.sgRow-col.span8,
+.sgRow-col.span9,
+.sgRow-col.span10,
+.sgRow-col.span11,
+.sgRow-col.span12 {
+  width: 100%;
+}
+
+.sgRow-col.sm\:span1 {
+  width: 8.33333%;
+}
+
+.sgRow-col.sm\:span2 {
+  width: 16.66667%;
+}
+
+.sgRow-col.sm\:span3 {
+  width: 25%;
+}
+
+.sgRow-col.sm\:span4 {
+  width: 33.33333%;
+}
+
+.sgRow-col.sm\:span5 {
+  width: 41.66667%;
+}
+
+.sgRow-col.sm\:span6 {
+  width: 50%;
+}
+
+.sgRow-col.sm\:span7 {
+  width: 58.33333%;
+}
+
+.sgRow-col.sm\:span8 {
+  width: 66.66667%;
+}
+
+.sgRow-col.sm\:span9 {
+  width: 75%;
+}
+
+.sgRow-col.sm\:span10 {
+  width: 83.33333%;
+}
+
+.sgRow-col.sm\:span11 {
+  width: 91.66667%;
+}
+
+.sgRow-col.sm\:span12 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 48em) {
+  .sgRow-col.span1 {
+    width: 8.33333%;
+  }
+  .sgRow-col.span2 {
+    width: 16.66667%;
+  }
+  .sgRow-col.span3 {
+    width: 25%;
+  }
+  .sgRow-col.span4 {
+    width: 33.33333%;
+  }
+  .sgRow-col.span5 {
+    width: 41.66667%;
+  }
+  .sgRow-col.span6 {
+    width: 50%;
+  }
+  .sgRow-col.span7 {
+    width: 58.33333%;
+  }
+  .sgRow-col.span8 {
+    width: 66.66667%;
+  }
+  .sgRow-col.span9 {
+    width: 75%;
+  }
+  .sgRow-col.span10 {
+    width: 83.33333%;
+  }
+  .sgRow-col.span11 {
+    width: 91.66667%;
+  }
+  .sgRow-col.span12 {
+    width: 100%;
+  }
+  .sgRow-col.md\:span1 {
+    width: 8.33333%;
+  }
+  .sgRow-col.md\:span2 {
+    width: 16.66667%;
+  }
+  .sgRow-col.md\:span3 {
+    width: 25%;
+  }
+  .sgRow-col.md\:span4 {
+    width: 33.33333%;
+  }
+  .sgRow-col.md\:span5 {
+    width: 41.66667%;
+  }
+  .sgRow-col.md\:span6 {
+    width: 50%;
+  }
+  .sgRow-col.md\:span7 {
+    width: 58.33333%;
+  }
+  .sgRow-col.md\:span8 {
+    width: 66.66667%;
+  }
+  .sgRow-col.md\:span9 {
+    width: 75%;
+  }
+  .sgRow-col.md\:span10 {
+    width: 83.33333%;
+  }
+  .sgRow-col.md\:span11 {
+    width: 91.66667%;
+  }
+  .sgRow-col.md\:span12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .sgRow-col.span1 {
+    width: 8.33333%;
+  }
+  .sgRow-col.span2 {
+    width: 16.66667%;
+  }
+  .sgRow-col.span3 {
+    width: 25%;
+  }
+  .sgRow-col.span4 {
+    width: 33.33333%;
+  }
+  .sgRow-col.span5 {
+    width: 41.66667%;
+  }
+  .sgRow-col.span6 {
+    width: 50%;
+  }
+  .sgRow-col.span7 {
+    width: 58.33333%;
+  }
+  .sgRow-col.span8 {
+    width: 66.66667%;
+  }
+  .sgRow-col.span9 {
+    width: 75%;
+  }
+  .sgRow-col.span10 {
+    width: 83.33333%;
+  }
+  .sgRow-col.span11 {
+    width: 91.66667%;
+  }
+  .sgRow-col.span12 {
+    width: 100%;
+  }
+}
+
+/*
+* Sel il <div> che contiene le sgRow non occupa il 100% della pagina, allora le media query 
+* non riescono a pilotare in maniera coretta le dimensioni delle sgRow-col, è possibile forzare 
+* un ridimensionamneto delle colonne aggiungendo una delle due classi sottostanti al contenitore principale. 
+* Comportomaneto da pilotare via javascript, cosi viene simulata la media query sulla largezza del contenitore 
+* e non della viewPort
+*/
+.responsiveWrapper_sm .sgRow-col.sm\:span1 {
+  width: 8.33333%;
+}
+
+.responsiveWrapper_sm .sgRow-col.sm\:span2 {
+  width: 16.66667%;
+}
+
+.responsiveWrapper_sm .sgRow-col.sm\:span3 {
+  width: 25%;
+}
+
+.responsiveWrapper_sm .sgRow-col.sm\:span4 {
+  width: 33.33333%;
+}
+
+.responsiveWrapper_sm .sgRow-col.sm\:span5 {
+  width: 41.66667%;
+}
+
+.responsiveWrapper_sm .sgRow-col.sm\:span6 {
+  width: 50%;
+}
+
+.responsiveWrapper_sm .sgRow-col.sm\:span7 {
+  width: 58.33333%;
+}
+
+.responsiveWrapper_sm .sgRow-col.sm\:span8 {
+  width: 66.66667%;
+}
+
+.responsiveWrapper_sm .sgRow-col.sm\:span9 {
+  width: 75%;
+}
+
+.responsiveWrapper_sm .sgRow-col.sm\:span10 {
+  width: 83.33333%;
+}
+
+.responsiveWrapper_sm .sgRow-col.sm\:span11 {
+  width: 91.66667%;
+}
+
+.responsiveWrapper_sm .sgRow-col.sm\:span12 {
+  width: 100%;
+}
+
+.responsiveWrapper_md .sgRow-col.md\:span1 {
+  width: 8.33333%;
+}
+
+.responsiveWrapper_md .sgRow-col.md\:span2 {
+  width: 16.66667%;
+}
+
+.responsiveWrapper_md .sgRow-col.md\:span3 {
+  width: 25%;
+}
+
+.responsiveWrapper_md .sgRow-col.md\:span4 {
+  width: 33.33333%;
+}
+
+.responsiveWrapper_md .sgRow-col.md\:span5 {
+  width: 41.66667%;
+}
+
+.responsiveWrapper_md .sgRow-col.md\:span6 {
+  width: 50%;
+}
+
+.responsiveWrapper_md .sgRow-col.md\:span7 {
+  width: 58.33333%;
+}
+
+.responsiveWrapper_md .sgRow-col.md\:span8 {
+  width: 66.66667%;
+}
+
+.responsiveWrapper_md .sgRow-col.md\:span9 {
+  width: 75%;
+}
+
+.responsiveWrapper_md .sgRow-col.md\:span10 {
+  width: 83.33333%;
+}
+
+.responsiveWrapper_md .sgRow-col.md\:span11 {
+  width: 91.66667%;
+}
+
+.responsiveWrapper_md .sgRow-col.md\:span12 {
+  width: 100%;
+}
+/*# sourceMappingURL=simple-grid.css.map */

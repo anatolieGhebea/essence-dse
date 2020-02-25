@@ -1,0 +1,62 @@
+{
+	"options": {
+		"copyAfterParse": {
+			"enabled" : false,
+			"copyDistTo": ""
+		}
+	},
+	"categories": [
+		{
+			"componentType": "simple",
+			"name": "Atomic Css",
+			"items": [
+				{
+					"displayName": "Breackpoints",
+					"file": "_breackpoints",
+					"relativePath": "../atomicCss/"
+				},
+				{
+					"displayName": "Palette",
+					"file": "_palette5",
+					"relativePath": "../atomicCss/"
+				},
+				{
+					"displayName": "Backgrounds",
+					"file": "_backgrounds",
+					"relativePath": "../atomicCss/"
+				},
+				{
+					"displayName": "Text",
+					"file": "_text",
+					"relativePath": "../atomicCss/"
+				},
+				{
+					"displayName": "Spacing",
+					"file": "_spacing",
+					"relativePath": "../atomicCss/"
+				},
+				{
+					"displayName": "Display helper",
+					"file": "_viewport_helper",
+					"relativePath": "../atomicCss/"
+				},
+				{
+					"displayName": "Flex helper",
+					"file": "_flex_helper",
+					"relativePath": "../atomicCss/"
+				}
+			]
+		},
+		{
+			"componentType": "simple",
+			"name": "Layout",
+			"items": [
+				{
+					"displayName": "Simple grid",
+					"file": "simple_grid",
+					"relativePath": "../atomicCss/scss/"
+				}
+			]
+		}
+	]
+}
