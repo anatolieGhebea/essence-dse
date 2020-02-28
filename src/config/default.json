@@ -21,11 +21,6 @@
 					"relativePath": "../atomicCss/"
 				},
 				{
-					"displayName": "Backgrounds",
-					"file": "_backgrounds",
-					"relativePath": "../atomicCss/"
-				},
-				{
 					"displayName": "Text",
 					"file": "_text",
 					"relativePath": "../atomicCss/"

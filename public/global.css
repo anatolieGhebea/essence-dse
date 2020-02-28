@@ -7,7 +7,8 @@ html, body {
 }
 
 body {
-	background: hsl(212, 33%, 89%);
+	/* background: hsl(212, 33%, 89%); */
+	background: hsl(212, 52%, 96%);
 	font-family: "Source Serif Pro", "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	line-height: 1.5;
 	color:hsl(209, 34%, 30%);
@@ -53,4 +54,16 @@ a:visited {
 
 .flex_justify_between {
 	justify-content: space-between;;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.demoContainer-show > div > div {
+	padding: .5rem;
+}
+
+.box-borders {
+	border:1px solid var(--grey);
 }

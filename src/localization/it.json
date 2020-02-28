@@ -1,0 +1,17 @@
+{
+    "example":"Esempio",
+    "variables":"Variabili",
+    "breackpoints_main_description":"Per i breack points vengono definite le seguenti variabili. Questo vengono usate dai diversi fogli di stile per la definizione delle regole di media query.",
+    "variable_width_description":"Questa variabile viene usata per calcolare le larghezze delle colonne per il layout <i> simple_grid </i>",
+    "variable_gutter_description":"Questa variabile viene usata per calcolare il gap tra le colonne per il layout <i> simple_grid </i>. Per il design sistema attuale, di default non è presente uno gap tra le colonne, gli elementi che vengono messi all'interno dovranno gestirsi la spaziatura tramite il margin o il padding.",
+    "bkp_sm_description":"Si intende che sotto i 30em <i>(480px)</i> si è su un schermo xm <small>(extra small)</small>, da 30em in su e fino al <i>$breakpoint-md</i> lo schermo ha dimensione sm <small>{small}</small>",
+    "bkp_md_description":"Si intende che sotto i 48em <i>(768px)</i> si è su un schermo sm <small>(small)</small>, da 48em in su e fino al <i>$breakpoint-lg</i> lo schermo ha dimensione md <small>{medeum}</small>",
+    "bkp_lg_description":"Si intende che sotto i 64em <i>(1024px)</i> si è su un schermo md <small>(medeum)</small>, da 64em in su e fino al <i>$breakpoint-xl</i> lo schermo ha dimensione lg <small>{large}</small>",
+    "bkp_xl_description":"Quando sono su schermi che hanno risoluzione maggiore di <i>(1360px)</i>",
+    "section_spacing_description":"In questa pagina sono elencati i modificatori standard per le spaziature che si possono applicare",
+    "section_spacing_padding":"Modificatori padding",
+    "section_spacing_padding_description":"E' possibile applicare dei padding in maniera abbastanza granulare, partendo dal minimo di <i><b>0</b></i> fino ad un massimo di <i><b>2rem</b></i>.",
+    "section_spacing_margin":"Modificatori margin",
+    "section_spacing_margin_description":"E' possibile applicare dei margini in maniera abbastanza granulare, partendo dal minimo di <i><b>0</b></i> fino ad un massimo di <i><b>2rem</b></i>.",
+    "s":""
+}

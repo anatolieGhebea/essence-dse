@@ -64,26 +64,11 @@
 		let res = [];
 		classes.forEach( cls => {
 			let s = example.replace(/%%cls%%/, cls).replace(/%%cls%%/, cls);
-			res.push( { class: cls, el: s } );
+			res.push( s );
 		});
 
 		return res;
 	}
-
-	function copyToClipboard( str ) {
-		const el = document.createElement('textarea');
-		el.value = str;
-		el.setAttribute('readonly', '');
-		el.style.position = 'absolute';
-		el.style.left = '-9999px';
-		document.body.appendChild(el);
-		el.select();
-		document.execCommand('copy');
-		document.body.removeChild(el);
-
-		alert('copiato');
-	};
-
 
 </script>
 
@@ -105,27 +90,20 @@
 				{#if section.classes != '' }
 					<h5> { Locale.t('example') } </h5>
 					<div class="demoContainer">
-						{#each generateArr(section.classes, section.example) as elm  }
-							<div class="demoContainer-row">
-								<div class="rowOperations">
-									<span class="op opCopy" on:click="{ () => copyToClipboard(elm.class) }">Copy class</span>
-									<span class="op opCopy" on:click="{ () => copyToClipboard(elm.el) }">Copy markup</span>
-								</div>
-								<div class="demoContainer-show">
-									<div class="{ (section.wrapperClass ? section.wrapperClass: '' ) }"> {@html elm.el } </div>
-								</div>
-
-								<div class="demoContainer-code">
-									<pre>
-										<code  class="language-html">
-											<!-- mostro il codice sorgente -->
-											{@html beautify(elm.el) }
-										</code>
-									</pre>
-								</div>
-							</div>
-						{/each}
+						<div class="demoContainer-show">
+							{#each generateArr(section.classes, section.example) as el  }
+								<div class="{ (section.wrapperClass ? section.wrapperClass: '' ) }"> {@html el } </div>
+							{/each}
+						</div>
 							<!-- <pre> -->
+						<div class="demoContainer-code">
+							<pre>
+								<code  class="language-html">
+									<!-- mostro il codice sorgente -->
+									{@html beautify(generate(section.classes, section.example)) }
+								</code>
+							</pre>
+						</div>
 						<!-- </pre> -->
 					</div>
 				{/if}
@@ -195,28 +173,25 @@
 
 	.demoContainer {
 		width: 100%;
-		/* display: flex; */
+		display: flex;
 		font-size: 1.2rem;
 	}
 
-	.demoContainer-row  {
-		position: relative;
-		display: flex;
-		flex-wrap: wrap;
+	.demoContainer-show {
+		/* background:hsl(210, 36%, 96%); */
+		/* min-height: 15rem; */
 		background: #fff;
-		padding: .25rem;
-		margin-bottom: .5rem;
 		border-radius: .5rem;
-		align-items: center;
-	}
-
-	.demoContainer-row:hover .rowOperations {
-		display: block;
-	}
-	.demoContainer-show  {
-		margin: 0 1.5rem;
-		flex-grow: 100;
-		min-width: 20rem;
+		margin-right: 1rem;
+		height: auto;	
+		display: flex;
+		justify-content: center;
+		/* align-content: flex-start; */
+		flex-direction: column;
+		flex-wrap: wrap;
+		flex-basis: 50%;
+		flex-grow: 1;		
+		padding: 1rem;
 	}
 	.demoContainer-show > div > div {
 		padding: .5rem;
@@ -227,30 +202,10 @@
 		background:#2d2d2d;
 		color: #fff;
 		word-wrap: break-word;
+		padding: .5rem 0;
+		flex-basis: 40%;
 		border-radius: .5rem;
-		flex-basis: 50%;
-		min-width: 20rem;
-		flex-grow: 1
-	}
-
-	.rowOperations {
-		display: none;
-		position: absolute;
-		top: 0;
-		right: 0;
-		background: var(--neutral_100);
-		color: var(--neutral_800);
-		padding: .2rem;
-		border-radius: .25rem;
-		box-shadow: 0 2px 2px 0 #ccc;
-		font-size: 16px;
-	}
-	.rowOperations .op {
-		padding: .2rem;
-		opacity: .6;
-	}
-	.rowOperations .op:hover {
-		opacity: 1;
-		cursor: pointer;
+		justify-content: center;
+		padding-left: 1rem;
 	}
 </style>

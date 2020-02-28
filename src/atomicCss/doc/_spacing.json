@@ -1,0 +1,24 @@
+{
+	"mainDescription": "section_spacing_description",
+	
+	"sections" :[
+		{
+			"sectionName": "section_spacing_padding",
+			"description": "section_spacing_padding_description",
+				
+			"classes": [ "no_padding","no_hpadding","no_vpadding","p_vert_0","p_top_0","p_bot_0","p_hor_0","p_left_0","p_right_0","p_vert_010","p_top_010","p_bot_010","p_hor_010","p_left_010","p_right_010","p_vert_025","p_top_025","p_bot_025","p_hor_025","p_left_025","p_right_025","p_vert_05","p_top_05","p_bot_05","p_hor_05","p_left_05","p_right_05","p_vert_1","p_top_1","p_bot_1","p_hor_1","p_left_1","p_right_1","p_vert_2","p_top_2","p_bot_2","p_hor_2","p_left_2","p_right_2" ],
+            "example": "<div class=\"%%cls%%\"> <div class=\"bg_neutral_050\"> %%cls%% </div></div>",
+            "wrapperClass": "box-borders bg_primary_100 m_bot_05 text_black"
+		},
+		{
+			"sectionName": "section_spacing_margin",
+			"description": "section_spacing_margin_description",
+				
+			"classes": [ "no_margin","no_vmargin","no_hmargin","m_vert_0","m_top_0","m_bot_0","m_hor_0","m_left_0","m_right_0","m_vert_010","m_top_010","m_bot_010","m_hor_010","m_left_010","m_right_010","m_vert_025","m_top_025","m_bot_025","m_hor_025","m_left_025","m_right_025","m_vert_05","m_top_05","m_bot_05","m_hor_05","m_left_05","m_right_05","m_vert_1","m_top_1","m_bot_1","m_hor_1","m_left_1","m_right_1","m_vert_2","m_top_2","m_bot_2","m_hor_2","m_left_2","m_right_2" ],
+            "example": " <div class=\"%%cls%% bg_neutral_050\"> %%cls%% </div>",
+            "wrapperClass": "box-borders bg_warning_100 no_padding m_bot_025"
+		}
+	],
+
+	"cssVariables": []
+}

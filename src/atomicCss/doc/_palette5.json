@@ -1,0 +1,23 @@
+{
+	"mainDescription": "section_description",
+	
+	"sections" :[
+		{
+			"sectionName": "section_text_colors",
+			"description": "section_text_colors_description",
+				
+			"classes": [ "text_base","text_dark","text_light","text_grey","text_light_grey","text_white bg_dark","text_black","text_neutral_050 bg_neutral_400","text_neutral_100","text_neutral_200","text_neutral_300","text_neutral_400","text_neutral_500","text_neutral_600","text_neutral","text_neutral_800","text_neutral_900","text_primary_050 bg_primary_400","text_primary_100","text_primary_200","text_primary_300","text_primary_400","text_primary_500","text_primary_600","text_primary","text_primary_800","text_primary_900","text_info_050 bg_info_400","text_info_100","text_info_200","text_info_300","text_info_400","text_info_500","text_info_600","text_info","text_info_800","text_info_900","text_danger_050 bg_danger_400","text_danger_100","text_danger_200","text_danger_300","text_danger_400","text_danger_500","text_danger_600","text_danger","text_danger_800","text_danger_900","text_success_050 bg_success_400","text_success_100","text_success_200","text_success_300","text_success_400","text_success_500","text_success_600","text_success","text_success_800","text_success_900","text_warning_050 bg_warning_400","text_warning_100","text_warning_200","text_warning_300","text_warning_400","text_warning_500","text_warning_600","text_warning","text_warning_800","text_warning_900","text_teal_050 bg_teal_400","text_teal_100","text_teal_200","text_teal_300","text_teal_400","text_teal_500","text_teal_600","text_teal","text_teal_800","text_teal_900"],
+			"example": " <div class=\"%%cls%%\"> %%cls%% </div>"
+		},
+		{
+			"sectionName": "section_background_colors",
+			"description": "section_background_description",
+				
+			"classes": [ "bg_base text_neutral_050","bg_dark text_neutral_050","bg_light text_neutral_050","bg_grey text_neutral_050","bg_light_grey","bg_white","bg_black text_neutral_050", "bg_neutral_025","bg_neutral_050","bg_neutral_100","bg_neutral_200","bg_neutral_300","bg_neutral_400","bg_neutral_500 text_neutral_050","bg_neutral_600 text_neutral_050","bg_neutral_700 text_neutral_050","bg_neutral_800 text_neutral_050","bg_neutral_900 text_neutral_050","bg_primary_025","bg_primary_050","bg_primary_100","bg_primary_200","bg_primary_300","bg_primary_400","bg_primary_500 text_neutral_050","bg_primary_600 text_neutral_050","bg_primary text_neutral_050","bg_primary_800 text_neutral_050","bg_primary_900 text_neutral_050","bg_info_025","bg_info_050","bg_info_100","bg_info_200","bg_info_300","bg_info_400","bg_info_500 text_neutral_050","bg_info_600 text_neutral_050","bg_info text_neutral_050","bg_info_800 text_neutral_050","bg_info_900 text_neutral_050","bg_danger_025","bg_danger_050","bg_danger_100","bg_danger_200","bg_danger_300","bg_danger_400","bg_danger_500 text_neutral_050","bg_danger_600 text_neutral_050","bg_danger text_neutral_050","bg_danger_800 text_neutral_050","bg_danger_900 text_neutral_050","bg_success_025","bg_success_050","bg_success_100","bg_success_200","bg_success_300","bg_success_400","bg_success_500 text_neutral_050","bg_success_600 text_neutral_050","bg_success text_neutral_050","bg_success_800 text_neutral_050","bg_success_900 text_neutral_050","bg_warning_025","bg_warning_050","bg_warning_100","bg_warning_200","bg_warning_300","bg_warning_400","bg_warning_500 text_neutral_050","bg_warning_600 text_neutral_050","bg_warning text_neutral_050","bg_warning_800 text_neutral_050","bg_warning_900 text_neutral_050","bg_teal_025","bg_teal_050","bg_teal_100","bg_teal_200","bg_teal_300","bg_teal_400","bg_teal_500 text_neutral_050","bg_teal_600 text_neutral_050","bg_teal text_neutral_050","bg_teal_800 text_neutral_050","bg_teal_900 text_neutral_050" ],
+			"example": " <div class=\"%%cls%%\"> %%cls%% </div>"
+		}
+
+	],
+
+	"cssVariables": []
+}

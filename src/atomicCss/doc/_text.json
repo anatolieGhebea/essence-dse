@@ -1,0 +1,29 @@
+{
+	"mainDescription": "section_description",
+	
+	"sections" :[
+		{
+			"sectionName": "section_text_util",
+			"description": "section_text_util_description",
+				
+			"classes": [ "text_left","text_center","text_right","text_bold","text_bolder","text_normal","text_thin" ],
+			"example": " <div class=\"%%cls%%\"> %%cls%% </div>"
+		},
+		{
+			"sectionName": "section_text_size",
+			"description": "section_text_size_description",
+				
+			"classes": [ "text_s_12", "text_s_14", "text_s_16", "text_s_18", "text_s_20", "text_s_24", "text_s_32", "text_s_48"],
+			"example": " <div class=\"%%cls%%\"> %%cls%% </div>"
+		},
+		{
+			"sectionName": "section_text_relative_size",
+			"description": "section_text_relative_size_description",
+				
+			"classes": [ "text_rs_half","text_rs_smaller","text_rs_normal","text_rs_bigger","text_rs_twice" ],
+			"example": " <div class=\"%%cls%%\"> %%cls%% </div>"
+		}
+	],
+
+	"cssVariables": []
+}

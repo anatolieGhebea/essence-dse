@@ -4,7 +4,14 @@
 	import Simple from './components/Simple.svelte';
 	import  config from './config/default.json';
 	
-	import  tmpTestDoc from './atomicCss/doc/_breackpoints.json';
+	// let lang = 'it';
+	import  { Locale }  from './localization/localization.js';
+
+	// partials
+	import  textDoc from './atomicCss/doc/_text.json';
+	import  paletteDoc from './atomicCss/doc/_palette5.json';
+	import  spacingDoc from './atomicCss/doc/_spacing.json';
+	import  breackpointsDoc from './atomicCss/doc/_breackpoints.json';
 
 	let doc = {};
 
@@ -14,7 +21,7 @@
 	function selectFirstEl(cats) {
 		if( cats.length > 0 ){		
 			if(cats[0].items.length > 0 ) {
-				let el = cats[0]['items'][0];
+				let el = cats[0]['items'][3];
 				let cmpt = cats[0].componentType;
 				setActiveElem(el, cmpt );
 			}
@@ -29,9 +36,25 @@
 	function setActiveElem( el, cmpt ){
 		activeElem = el;
 		componentType = cmpt;
-		if( el.file == '_breackpoints' ){
-			doc = tmpTestDoc;
+		switch (el.file) {
+			case '_text':
+				doc = textDoc;	
+				break;
+			case '_palette5':
+				doc = paletteDoc;	
+				break;
+			case '_spacing':
+				doc = spacingDoc;	
+				break;
+			case '_breackpoints':
+				doc = breackpointsDoc;	
+				break;
+		
+			default:
+				doc = {}
+				break;
 		}
+
 	}
 
 	// function isActive(activeLink, al) {
@@ -63,7 +86,7 @@
 		<div class="main-content">
 			<!-- slected element { activeElem.displayName } -->
 			{#if componentType == 'simple' }
-				<Simple activeElement="{activeElem}" doc="{doc}" lang="it"></Simple>
+				<Simple activeElement="{activeElem}" doc="{doc}" lang="it" {Locale}></Simple>
 			{/if}
 		</div>
 	</div>
@@ -101,6 +124,7 @@
 .container .main-content {
 	flex-grow: 1;
 	padding: 2.5rem;
+	width: calc( 100% - 13rem)
 }
 
 .side-menu ul {
